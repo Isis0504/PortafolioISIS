@@ -51,6 +51,36 @@
   flex: 1;
 }
 
+.project-card__link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--gradient-main); /* usa tu gradiente principal */
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  transition: background var(--transition), transform var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.project-card__link:hover {
+  background: var(--gradient-soft); /* efecto hover con gradiente suave */
+  color: var(--color-text);
+  transform: translateY(-2px);
+}
+
+.project-card__private {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  background: var(--gradient-soft);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
 .project-card__top {
   display: flex;
   align-items: center;

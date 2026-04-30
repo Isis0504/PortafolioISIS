@@ -10,6 +10,7 @@ const projects = [
     solution: 'Se creó una plataforma que permite organizar asambleas, registrar votaciones y centralizar la información de los propietarios.',
     tech: ['React', 'API REST', 'Base de datos relacional'],
     icon: '🏛️',
+    link: 'https://nexisco.netlify.app/gestion-de-asambleas',
   },
   {
     number: '02',
@@ -19,6 +20,7 @@ const projects = [
     solution: 'Se desarrolló un sistema que centraliza la gestión administrativa, permitiendo controlar información, procesos y comunicación con los residentes.',
     tech: ['React', 'Node.js', 'PostgreSQL'],
     icon: '🏘️',
+    link: 'https://nexisco.netlify.app/gestion-de-conjuntos',
   },
   {
     number: '03',
@@ -28,6 +30,7 @@ const projects = [
     solution: 'Se creó un sistema que permite agendar citas, registrar pacientes, gestionar el historial de atención y organizar el flujo de trabajo de la óptica.',
     tech: ['React', 'Backend API', 'MySQL'],
     icon: '👓',
+    link: null, // no se muestra públicamente
   },
 ]
 
@@ -68,6 +71,20 @@ export default function Projects() {
             >
               <div className="project-card__number">{project.number}</div>
               <div className="project-card__body">
+                {project.link ? (
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="project-card__link"
+                  >
+                    Ver proyecto
+                  </a>
+              ) : (
+                <p className="project-card__private">
+                  🔒 Este proyecto no está disponible públicamente por motivos de privacidad.
+                </p>
+              )}
                 <div className="project-card__top">
                   <span className="project-card__icon">{project.icon}</span>
                   <h3 className="project-card__title">{project.title}</h3>
