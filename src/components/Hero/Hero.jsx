@@ -177,6 +177,9 @@ export default function Hero() {
               <a href="/hoja-de-vida.pdf" className="btn btn--cv" download>
                 Descargar hoja de vida
               </a>
+              <a href="/Catalogo.pdf" className="btn btn--cv" download>
+                 Descargar catálogo
+              </a>
             </motion.div>
           </div>
 
