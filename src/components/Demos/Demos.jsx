@@ -4,7 +4,7 @@ import './Demos.css'
 const demos = [
   {
     title: 'Soluclicks',
-    description: 'Sitio web para una agencia de mantenimiento.',
+    description: 'Sitio web para una agencia de mantenimiento 24h.',
     url: 'https://soluclicks.netlify.app/',
     icon: '📱',
   },
