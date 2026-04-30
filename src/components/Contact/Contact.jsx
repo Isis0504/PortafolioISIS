@@ -112,7 +112,7 @@ export default function Contact() {
                   <p className="contact__way-label">WhatsApp</p>
                   <a
                     className="contact__way-value contact__way-link"
-                    href="http://wa.me/3219820646"
+                    href="https://wa.me/3219820646"
                     target="_blank"
                     rel="noreferrer"
                   >
